@@ -1,6 +1,11 @@
 # Arc-Toolbox-Frame
-Arc Toolbox Frame
-Addon for INGRESS IITC plugin: Arc
-Surrounds Arc Menu Elements with a box.
 
-It's nice, it really is.
+This is an addon for INGRESS IITC plugin: Arc
+
+It surrounds Arc Menu Elements with a box. 
+
+That's all. Simply as it is, it's also nice. 
+
+
+
+It really is.
