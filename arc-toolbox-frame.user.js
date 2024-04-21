@@ -2,7 +2,7 @@
 // @id             iitc-plugin-arc-toolbox-frame
 // @name           IITC plugin: Arc Toolbox Frame
 // @category       Layer
-// @version      1.0
+// @version      1.1
 // @description  Combines Arc menu buttons in a frame.
 // @author       YET ANOTHER ENLIGHTENED AGENT
 // @match          https://intel.ingress.com/*
@@ -19,9 +19,9 @@ function wrapper(plugin_info) {
 
     //PLUGIN AUTHORS: writing a plugin outside of the IITC build environment? if so, delete these lines!!
     //(leaving them in place might break the 'About IITC' page or break update checks)
-    plugin_info.buildName = 'iitc';
-    plugin_info.dateTimeVersion = '20170108.21732';
-    plugin_info.pluginId = 'draw-tools';
+    plugin_info.buildName = 'release';
+    plugin_info.dateTimeVersion = '20240421.212321';
+    plugin_info.pluginId = 'arc-toolbox-frame';
     //END PLUGIN AUTHORS NOTE
 
 
@@ -42,7 +42,7 @@ function wrapper(plugin_info) {
 
         $("<style>").prop("type", "text/css").html('a.plugin_arcs_toolbox_nolink:hover {text-decoration: none; cursor:initial;}').appendTo("head");
 
-        $("#toolbox > [onclick^='window.plugin.arcs.']").wrapAll("<fieldset id='plugin_arcs_toolbox' style='margin: 5px; padding: 3px; border: 1px solid rgb(255, 206, 0); box-shadow: black 3px 3px 5px; color: rgb(255, 206, 0);'></fieldset>");
+        $("#toolbox_component > [onclick^='window.plugin.arcs.']").wrapAll("<fieldset id='plugin_arcs_toolbox' style='margin: 5px; padding: 3px; border: 1px solid rgb(255, 206, 0); box-shadow: black 3px 3px 5px; color: rgb(255, 206, 0);'></fieldset>");
         $("#plugin_arcs_toolbox").prepend("<legend>Arcs</legend>");
         $("#plugin_arcs_toolbox > a").css({
             "margin-left": "5px",
