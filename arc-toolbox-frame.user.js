@@ -2,16 +2,14 @@
 // @id             iitc-plugin-arc-toolbox-frame
 // @name           IITC plugin: Arc Toolbox Frame
 // @category       Layer
-// @version      1.1
-// @description  Combines Arc menu buttons in a frame.
-// @author       YET ANOTHER ENLIGHTENED AGENT
+// @version        1.2
+// @description    Combines Arc menu buttons in a frame.
+// @author         Heistergand
 // @match          https://intel.ingress.com/*
-// @grant        none
-// @downloadURL https://github.com/Heistergand/arc-toolbox-frame/raw/master/arc-toolbox-frame.user.js
-// @updateURL https://github.com/Heistergand/arc-toolbox-frame/raw/master/arc-toolbox-frame.meta.js
+// @grant          none
+// @downloadURL    https://github.com/Heistergand/arc-toolbox-frame/raw/master/arc-toolbox-frame.user.js
+// @updateURL      https://github.com/Heistergand/arc-toolbox-frame/raw/master/arc-toolbox-frame.meta.js
 // ==/UserScript==
-
-
 
 function wrapper(plugin_info) {
     // ensure plugin framework is there, even if iitc is not yet loaded
@@ -24,7 +22,11 @@ function wrapper(plugin_info) {
     plugin_info.pluginId = 'arc-toolbox-frame';
     //END PLUGIN AUTHORS NOTE
 
-
+    var changelog = [
+        {
+            version: '1.2',
+        },
+    ]; // end of changelog
 
     // PLUGIN START ////////////////////////////////////////////////////////
 
@@ -58,6 +60,7 @@ function wrapper(plugin_info) {
 
 
     setup.info = plugin_info; //add the script info data to the function as a property
+    if (typeof changelog !== 'undefined') setup.info.changelog = changelog;
     if(!window.bootPlugins) window.bootPlugins = [];
     window.bootPlugins.push(setup);
     // if IITC has already booted, immediately run the 'setup' function
