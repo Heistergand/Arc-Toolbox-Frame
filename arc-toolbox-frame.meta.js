@@ -2,7 +2,7 @@
 // @id             iitc-plugin-arc-toolbox-frame
 // @name           IITC plugin: Arc Toolbox Frame
 // @category       Layer
-// @version        1.2
+// @version        1.3
 // @description    Combines Arc menu buttons in a frame.
 // @author         Heistergand
 // @match          https://intel.ingress.com/*
